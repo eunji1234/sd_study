@@ -6,59 +6,92 @@
   </head>
   <body>
 <table border="1" width="100%">
-  <caption>회원가입</caption>
-  <tr>
-    <td>이름</td>
-    <td><input type="name" placeholder="군소"></td>
-  </tr>
-  <tr>
-    <td>성별</td>
-    <td><input type="radio" name="gender" value="man" checked="yes">남
-      <input type="radio" name="gender" value="woman">여</dt>
-
-  </tr>
-  <tr>
-    <td>아이디</td>
-    <td><input type="userid" placeholder="msth"><input type="button" value="중복확인" ></td>
-  </tr>
-  <tr>
-    <td>비밀번호</td>
-    <td><input type="password" placeholder="1234"></td>
-  </tr>
-  <tr>
-    <td>비밀번호 재입력</td>
-    <td><input type="pasword" placeholder="1234"></td>
-  </tr>
-  <tr>
-    <td>주소</td>
-    <td><input type="area"  placeholder="바다"><input type="button" value="주소찾기"></td>
-  </tr>
-  <tr>
-    <td>이메일</td>
-    <td><input type="email" placeholder="msth">@<input type="email" placeholder="naver.com">
+     <fieldset>
+       <legend><caption>회원가입</caption></legend>
+   <tbody>
+    <tr>
+       <td>이름</td>
+       <td><label for="userid"><input type="text" placeholder="군소"></label></td>
+    </tr>
+    <tr>
+       <td>성별</td>
+       <td></label><input type="radio" name="gender" value="man" checked="yes">남
+       <input type="radio" name="gender" value="woman">여</td>
+    </tr>
+    <tr>
+       <td>아이디</td>
+       <td><input type="userid" placeholder="msth"><input type="button" value="중복확인" ></td>
+    </tr>
+    <tr>
+       <td>비밀번호</td>
+       <td><input type="password" placeholder="1234"></td>
+    </tr>
+    <tr>
+       <td>비밀번호 재입력</td>
+       <td><input type="pasword" placeholder="1234"></td>
+    </tr>
+    <tr>
+       <td>주소</td>
+       <td><input type="area"  placeholder="바다"><input type="button" value="주소찾기"></td>
+    </tr>
+    <tr>
+       <td>이메일</td>
+       <td><input type="email" placeholder="msth">@<input type="email" placeholder="naver.com">
       <select>
         <option>naver.com</option>
         <option>gmail.com</option>
         <option>nate.com</option>
+        <option>yahoo.com</option>
+        <option>hanmail.net</option>
      </select></td>
-  </tr>
-  <tr>
-    <td>전화번호</td>
-    <td><select>
+    </tr>
+    <tr>
+       <td>전화번호</td>
+       <td>
+      <select>
         <option>010</option>
         <option>011</option>
         <option>070</option>
-     </select>
+      </select>
       -<input type="text" placeholder="0000">-<input type="text" placeholder="0000"></td>
-  </tr>
-  <tr>
-    <td>취미</td>
-    <td><input type="checkbox" />여행<input type="checkbox" />쇼핑<input type="checkbox" />게임<input type="checkbox" />기타</td></td>
-  </tr>
-  <tr>
-    <td>자기소개</td>
-    <td><textarea></textarea></td>
-  </tr>
+    </tr>
+    <tr>
+      <td>취미</td>
+      <td><input type="checkbox" />여행<input type="checkbox" />쇼핑<input type="checkbox" />게임<input type="checkbox" />기타</td></td>
+    </tr>
+    <tr>
+      <td>자기소개</td>
+      <td><textarea></textarea></td>
+    </tr>
+
+</tbody>
+</table>
+    <dd><input type="submit" value="완료"><input type="reset" value="다시입력"></dd>
+</fieldset>
+
+
+
+<fieldset>
+    <legend>회원정보</legend>
+  <li>이름 : <input type="text" placeholder="이름 입력"></li>
+  <li>아이디 : <input type="text" placeholder="아이디 입력"><input type="button" value="중복확인"></li>
+  <li>비밀번호 : <input type="text" placeholder="비밀번호 입력"></li>
+  <li>비밀번호 확인 : <input type="text" placeholder="비밀번호 확인"></li>
+  <li>이메일 : <input type="email" placeholder="ex)asdf@naver.com"></li>
+  <li>이메일 수신 동의 : <input type="radio">동의<input type="radio" checked="yes">미동의</li>
+  <li>전화번호 : <select><option>SKT</option><option>KT</option><option>LGU</option></select><input type="text" placeholder="-빼고 숫자만 입력"></li>
+  <li>정보이용 <input type="checkbox">개인정보이용<input type="checkbox">개인정보사용</li>
+  <input type="submit" value="가입">
+</fieldset>
+
+
+
+
+
+
+
+
+
 
 
     <div>
